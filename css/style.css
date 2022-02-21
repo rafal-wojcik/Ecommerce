@@ -239,17 +239,95 @@ p {
     color: #555;
 }
 
+.page-btn {
+  margin: 0 auto 80px;
+}
+
+.page-btn span {
+  display: inline-block;
+  border: 1px solid #ff523b;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+    background: #ff523b;
+    color: #fff;
+}
+
 .rating .fa {
     color:#ff523b;
 }
 
-.row {
+.row 
+{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    }
+}
 
+.row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+
+    }
+select {
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus {
+    outline: none;
+}
+
+.single-product {
+  margin-top: 80px;
+}
+
+.single-product .col-2 {
+    padding: 20px;
+}
+
+.single-product .col-2 img {
+    padding: 0px;
+}
+
+.single-product h4 {
+   margin: 20px 0;
+   font-size: 22px;
+   font-weight: bold;
+}
+
+.single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+input:focus {
+    outline: none;
+}
+
+.single-product .fa {
+    color:#ff523b;
+    margin-left: 10px;
+}
+
+
+    
 .small-container {
     max-width: 1080px;
     margin: auto;
@@ -259,6 +337,16 @@ p {
 
 .small {
     color:#555;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
 }
 
 .testimonial {
@@ -309,6 +397,7 @@ ul {
 
 
 
+
 @media only screen and (max-width: 800px) {
     nav ul {
         position: absolute;
@@ -337,9 +426,8 @@ nav ul li a {
 }
 
 }
-
-
-
+          
+        
 
 
 @media only screen and (max-width: 600px) {
@@ -350,7 +438,90 @@ nav ul li a {
    .col-2, .col-3, .col-4 {
        flex-basis: 100%;
    }
+
+   .single-product .row {
+       text-align: left
+   }
+
+   .single-product h1 {
+       font-size: 26px;
+       line-height: 28px;
+    }
 }
+
+@media only screen and (max-width: 500px) {
+    select {
+        width: 170px;
+    } 
+
+    .row-2 h2 {
+       font-size: 23px; 
+    }
+        
+    }
+
+@media only screen and (max-width: 460px) {
+    select {
+        width: 140px;
+    } 
+
+    .row-2 h2 {
+       font-size: 22px; 
+    }
+        
+    }
+
+@media only screen and (max-width: 420px) {
+    select {
+        width: 110px;
+    } 
+
+    .row-2 h2 {
+       font-size: 20px; 
+    }
+
+    .single-product select {
+        width: 140px;
+    }
+        
+    }
+
+@media only screen and (max-width: 370px) {
+    select {
+        width: 100px;
+    } 
+
+    .row-2 h2 {
+       font-size: 18px; 
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    select {
+        width: 70px;
+    } 
+
+    .row-2 h2 {
+       font-size: 16px; 
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+      .row-2 h2 {
+        font-size: 14px;
+    }
+
+    .row-2 p {
+        font-size: 10px;
+    }
+}
+        
+
+
+
+
+
 
 
 
