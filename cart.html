@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2? display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>All products - RedStore</title>
+</head>
+<body>
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+         <img src="./image/logo.png" class="img-logo" alt="logo">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Produkty</a></li>
+                <li><a href="">O Nas</a></li>
+                <li><a href="">Kontakt</a></li>
+                <li><a href="">Konto</a></li>
+            </ul>
+        </nav>
+        <img src="./image/cart.png" class="img-cart" alt="cart">
+        <img src="./image/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    
+</div>
+
+
+<!------------ szczegóły pozycji koszyka---------->
+
+<div class="small-container">
+    <table class="cart-page">
+        <tr>
+            <th>Produkt</th>
+            <th>Ilość</th>
+            <th>Suma częściowa</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="./image/buy-1.jpg" alt="red printed T-shirt">
+                    <div>
+                        <P>Czerwona koszulka z nadrukiem</P>
+                        <small>Cena: 50 PLN</small>
+                        <br>
+                        <a href="">Usuń</a>
+
+                    </div> 
+                </div>
+            </td>
+            <td><input type="number" value="1"></div></td>
+            <td>50 PLN</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="./image/buy-2.jpg" alt="red printed T-shirt">
+                    <div>
+                        <P>Buty</P>
+                        <small>Cena: 75 PLN</small>
+                        <br>
+                        <a href="">Usuń</a>
+
+                    </div> 
+                </div>
+            </td>
+            <td><input type="number" value="1"></div></td>
+            <td>75 PLN</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="./image/buy-3.jpg" alt="red printed T-shirt">
+                    <div>
+                        <P>Spodnie</P>
+                        <small>Cena: 75 PLN</small>
+                        <br>
+                        <a href="">Usuń</a>
+
+                    </div> 
+                </div>
+            </td>
+            <td><input type="number" value="1"></div></td>
+            <td>75 PLN</td>
+        </tr>
+    </table>
+    <div class="total">
+        <table class="total-price">
+            <tr>
+                <td>Suma częściowa</td>
+                <td>200 PLN</td>
+            </tr>
+            <tr>
+                <td>Podatek</td>
+                <td>35 PLN</td>
+            </tr>
+            <tr>
+                <td>Całość</td>
+                <td>235 PLN</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!---------stopka------->
+<div class="footer">
+<div class="container">
+    <div class="row">
+        <div class="footer-col-1">
+            <h3>Pobierz naszą aplikację</h3>
+            <p>Pobierz aplikację na Androida i ios na telefon</p>
+            <div class="app-logo">
+                <img src="./image/play-store.png">
+                <img src="./image/app-store.png">
+            </div>
+        </div>
+        <div class="footer-col-2">
+            <img src="./image/logo-white.png">
+            <p>Naszym celem jest trwałe udostępnienie wielu 
+                <br>przyjemności i korzyści płynących ze sportu.</p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Użyteczne linki</h3>
+            <ul>
+                <li>Kupony</li>
+                <li>Posty na blogu</li>
+                <li>Polityka zwrotów</li>
+                <li>Dołącz do partnera</li>
+            </ul>
+        </div>
+        <div class="footer-col-3">
+            <h3>Obserwuj nas</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Yotube</li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">Prawa autorskie 2022 - Rafal Wojcik</p>
+</div>
+</div>
+
+<script>
+var MenuItems = document.getElementById("MenuItems");
+MenuItems.style.maxHeight = "0px";
+
+function menutoggle() {
+    if(MenuItems.style.maxHeight == "0px")
+    {
+       MenuItems.style.maxHeight = "200px";
+    }
+    else {
+        MenuItems.style.maxHeight = "0px"; 
+    }
+}
+</script>
+</body>
+
+
+
+
+
